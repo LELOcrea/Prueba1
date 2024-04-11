@@ -1,2 +1,4 @@
 # Prueba1
-es la prueba 
+Integrantes
+-Marcelo Bustamante
+-Gabriel Cóndor
