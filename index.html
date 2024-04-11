@@ -4,10 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRUEBA1</title>
+    <style>
+        table, tr, th, td {
+            border: 5px solid pink;
+        }
+    </style>
+    <script>
+        /*Cambiamos texto*/    
+        function CambiarTexto(){
+        document.getElementById("parrafo").innerHTML="¡¡GUARDADO!!";
+/*Agregamos texto*/
+        }
+        function Agregar(){
+        let NuevoElemento = document.createElement("h2")
+        NuevoElemento.innerHTML = "+ de un 4 es avaricia";
+       document.getElementById("contenedor").appendChild(NuevoElemento);
+        }   
+/*Function para cambio de color*/
+        function CambiarColor(){
+    /*Cambiar color*/
+       document.getElementById("TextoColor").style.color ="pink";
+    /*Cambiar Tamaño*/
+      document.getElementById("TextoColor").style.fontSize ="30px"
+
+        }
+    </script>
 </head>
 <body>
-    <H1>Nuestro portafolio digital</H1>
-    <img src="foto.png" alt="mifoto">
+    <H1>Nuestro portafolio digital</H1> <!--se coloca el titulo-->
+    <img src="foto.png" alt="mifoto"> <!--Se llamo a la foto de perfil-->
+    <hr>
+    <h2>¿Quien soy?</h2>
+    <p>Soy un desarrollador web junior en una empresa que está buscando expandir y modernizar su equipo de desarrollo web</p>
+    <hr>
+    <!--Colocamos foto-->
+    <img src="foto_angel.png" alt="" style="width:250px; height:250px;">
+    <hr>
+    <!--Comenzamos presentacion-->
+    <p>Hola, soy Angel, soy desarrollador de la mini empresa Crisemi, junto a mi compa buscamos expandirnos mas en el mundo informatico</p>
+    <h3>Trabaja con nosotros</h3>
+    <hr>
+    <h2>¡Trabaja con nosotros!</h2>
     
+    <table><!--Formulario dentro de una tabla -->
+
+        
+        <tr>
+            <th>DATOS SOLISITADOS</th>
+            <th>DATOS POR INGRESAR</th>
+        </tr>
+        <tr>
+            <td><label for="nombre">Nombre</label></td>
+            <td><input type="text" name="nombre"></td>
+        </tr>
+        <tr>
+            <td><label for="edad">Edad</label required></td>
+            <td><input type="number" name="edad"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Gmail</label></td>
+            <td><input type="email" name="email"></td>
+        </tr>
+    </table>
+    <P id="parrafo">Guardar tu información</P>
+    <button onclick="CambiarTexto()">Guardar</BUtton>
+
+
+
 </body>
 </html>
